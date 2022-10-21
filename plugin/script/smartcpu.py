@@ -95,31 +95,31 @@ print("---")
 print("Select power profile")
 if battery:
     print(get_now_run(0),
-          "\tExtra Battery :warning: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=0 terminal=false refresh=2")
+          "\tExtra Battery :warning: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=0 terminal=false refresh=true")
     print("----")
     print("--Config values: S" + setting[0]["S"] ,"L" + setting[0]["L"], "T" + setting[0]["T"], "| color=#FC74B3")
     print("--Extra profile for battery, will hold processor| color=#6FC1FF size=12")
     print("--run on lowest power for save more battery.| color=#6FC1FF size=12")
     print(get_now_run(1),
-          "\tBattery :battery: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=1 terminal=false refresh=2")
+          "\tBattery :battery: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=1 terminal=false refresh=true")
     print("----")
     print("--Config values: S" + setting[1]["S"] ,"L" + setting[1]["L"], "T" + setting[1]["T"], "| color=#FC74B3")
     print("--Default setting for battery mode.| color=#6FC1FF size=12")
 else:
     print(get_now_run(2),
-          "\tBalance :snowflake: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=2 terminal=false refresh=2")
+          "\tBalance :snowflake: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=2 terminal=false refresh=true")
     print("--Config values: S" + setting[2]["S"] ,"L" + setting[2]["L"], "T" + setting[2]["T"], "| color=#FC74B3")
     print("--Cool profile for cpu, this will keep processor| color=#6FC1FF size=12")
     print("--don't suck too much power for less heat, better| color=#6FC1FF size=12")
     print("--for watching movie and web developer.| color=#6FC1FF size=12")
     print(get_now_run(3),
-          "\tPerformance :muscle: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=3 terminal=false refresh=2")
+          "\tPerformance :muscle: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=3 terminal=false refresh=true")
     print("--Config values: S" + setting[3]["S"] ,"L" + setting[3]["L"], "T" + setting[3]["T"], "| color=#FC74B3")
     print("--Performance profile for cpu, allow cpu run| color=#6FC1FF size=12")
     print("--on higher power but don't let fan too noise,| color=#6FC1FF size=12")
     print("--for game and mobile app developer.| color=#6FC1FF size=12")
     print(get_now_run(4),
-          "\tExtra Performance :fire: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=4 terminal=false refresh=2")
+          "\tExtra Performance :fire: | bash=/bin/bash param1=/usr/local/bin/cprofile param2=4 terminal=false refresh=true")
     print("--Config values: S" + setting[4]["S"] ,"L" + setting[4]["L"], "T" + setting[4]["T"], "| color=#FC74B3")
     print("--Maxout processor performance, release the beast,| color=#6FC1FF size=12")
     print("--allow process suck more power for heavy job.| color=#6FC1FF size=12")
@@ -127,13 +127,13 @@ else:
 print("---")
 print("Extra config")
 if (notification): 
-    print(get_status(notification),"\tToggle notification | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=0 terminal=false refresh=2")
+    print(get_status(notification),"\tToggle notification | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=0 terminal=false refresh=true")
 else:
-    print(get_status(notification),"\tToggle notification | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=1 terminal=false refresh=2")
+    print(get_status(notification),"\tToggle notification | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=1 terminal=false refresh=true")
 
 if (auto_shut): 
-    print(get_status(auto_shut),"\tToggle auto shutdown | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=-1 param4=0 terminal=false refresh=2")
+    print(get_status(auto_shut),"\tToggle auto shutdown | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=-1 param4=0 terminal=false refresh=true")
 else:
-    print(get_status(auto_shut),"\tToggle auto shutdown | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=-1 param4=1 terminal=false refresh=2")
+    print(get_status(auto_shut),"\tToggle auto shutdown | bash=/bin/bash param1=/usr/local/bin/cprofile param2=-1 param3=-1 param4=1 terminal=false refresh=true")
 print("--Auto shutdown system when battery is below 5% percent,| color=#6FC1FF size=12")
 print("--you will have 1min before shutting down.| color=#6FC1FF size=12")
